@@ -1,0 +1,104 @@
+/* استيراد الخطوط */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar.scrolled {
+  background: #003452; /* خلفية داكنة عند السكروول */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 12px 32px;
+}
+
+.navbar-logo img {
+  height: 55px;
+  object-fit: contain;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #ffffff; /* لون النص أبيض فاتح */
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 6px 0;
+}
+
+.navbar-links a:hover {
+  color: #e6e6e6; /* الأزرق عند الهوفر */
+  transform: scale(1.05); /* تأثير التكبير عند الهوفر */
+}
+
+.navbar.scrolled .navbar-links a {
+  color: #e6e6e6; /* اللون الفاتح بعد التمرير */
+}
+
+.navbar.scrolled .navbar-links a:hover {
+  color: #ff6600; /* البرتقالي عند الهوفر أثناء السكروول */
+}
+
+/* زر الاتصال منفصل في الناحية اليمنى */
+.btn-primary {
+    background-color: #fdfdfd;
+    color: #0c89d8;
+    padding: 5px 24px;
+    border-radius: 26px !important;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s ease;
+    border: none;
+    text-transform: uppercase;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-left: 40px;
+    text-decoration: none;
+        font-size: 13px;
+}
+
+.btn-primary .arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+background-color: #e6e6e6;
+color: #145d9d;
+  transform: scale(1.05); /* تأثير تكبير الزر */
+}
+
+.btn-primary:hover .arrow {
+  transform: translateX(5px); /* حركة السهم عند الهوفر */
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+}

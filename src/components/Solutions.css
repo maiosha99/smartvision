@@ -1,0 +1,44 @@
+.solutions-section {
+  padding: 80px 20px;
+  background-color: #f0f9ff;
+  text-align: center;
+}
+
+.solutions-title {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+.solutions-grid-layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(180px, auto);
+}
+
+/* توزيع modular زي Stripe */
+
+.solution-card:nth-child(1) {
+  grid-column: span 3;
+}
+
+.solution-card:nth-child(2) {
+  grid-column: span 2;
+}
+
+.solution-card:nth-child(3) {
+  grid-column: span 1;
+}
+
+.solution-card:nth-child(4) {
+  grid-column: span 2;
+}
+
+.solution-card:nth-child(5) {
+  grid-column: span 2;
+}
+
+.solution-card:nth-child(6) {
+  grid-column: span 2;
+}

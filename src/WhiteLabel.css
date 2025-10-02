@@ -1,0 +1,107 @@
+.white-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 100px ;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.white-left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.white-left h2 {
+  font-size: 38px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.white-left p {
+  font-size: 18px;
+  color: #475569;
+  margin-bottom: 20px;
+}
+
+.white-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #334155;
+}
+
+.white-list li {
+  margin-bottom: 12px;
+}
+
+.white-btn {
+    padding: 10px 24px;
+    background-color: #0c76ba;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* تأثير الانتقال */
+}
+
+.white-btn:hover {
+    background-color: #078ada; /* تغير اللون عند الهوفر */
+    color: #e6e6e6;
+    transform: scale(1.1); /* تكبير البوتون */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+}
+
+
+.white-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-icons-strong {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  animation: strongerFloat 2.5s ease-in-out infinite;
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  animation-fill-mode: forwards;
+}
+
+.white-delay-1 { animation-delay: 0.2s; }
+.white-delay-2 { animation-delay: 0.4s; }
+.white-delay-3 { animation-delay: 0.6s; }
+.white-delay-4 { animation-delay: 0.8s; }
+
+@keyframes strongerFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9) rotate(-5deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05) rotate(3deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1) rotate(0deg);
+  }
+}
