@@ -3,7 +3,7 @@ import lottie from 'lottie-web';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // استيراد الـ AOS
 
-import './CustomSolutions.css';
+import './Customsolutions.css';
 
 export default function CustomSolutions() {
   const animationContainer = useRef(null);
